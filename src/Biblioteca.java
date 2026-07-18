@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Biblioteca {
     private ArrayList<Libro> libros;
     private ArrayList<Persona> personas;
+    private ArrayList<Prestamo> prestamos;
     private int proximoIdLibros;
     private int proximoIdPersonas;
 
@@ -10,6 +11,7 @@ public class Biblioteca {
     public Biblioteca() {
         libros = new ArrayList<>();
         personas = new ArrayList<>();
+        prestamos = new ArrayList<>();
         proximoIdLibros = 0;
         proximoIdPersonas = 0;
     }
@@ -81,5 +83,26 @@ public class Biblioteca {
             return true;
         }
         return false;
+    }
+    //Metodos para prestamo
+    public boolean prestarLibro(int idLibro, int idPersona) {
+
+        Libro libro = buscarLibro(idLibro);
+        Persona persona = buscarPersona(idPersona);
+
+        if(libro == null)
+            return false;
+
+        if(persona == null)
+            return false;
+
+        if(libro.estaPrestado())
+            return false;
+
+        libro.prestar();
+
+        prestamos.add(new Prestamo(libro, persona));
+
+        return true;
     }
 }
