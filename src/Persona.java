@@ -8,7 +8,7 @@ public class Persona{
     }
     //Metodos
     public void mostrarInformacion() {
-        System.out.printf("Id: %d | Nombre: %s", id, nombre);
+        System.out.printf("Id: %d | Nombre: %s%n", id, nombre);
     }
     //Getters
     public int getId() {
