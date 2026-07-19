@@ -105,4 +105,28 @@ public class Biblioteca {
 
         return true;
     }
+    public Prestamo buscarPrestamo(int idLibro, int idPersona) {
+
+        for(Prestamo prestamo : prestamos) {
+            if(prestamo.getLibro().getId() == idLibro &&
+                prestamo.getPersona().getId() == idPersona) {
+
+                return prestamo;
+            }
+        }
+
+        return null;
+    }
+    public boolean devolverLibro(int idLibro, int idPersona) {
+        Prestamo prestamo = buscarPrestamo(idLibro, idPersona);
+
+        if(prestamo == null) {
+            return false;
+        }
+        prestamo.getLibro().devolver();
+
+        prestamos.remove(prestamo);
+
+        return true;
+    }
 }

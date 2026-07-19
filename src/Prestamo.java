@@ -7,4 +7,11 @@ public class Prestamo {
         this.libro = libro;
         this.persona = persona;
     }
+    //Getters
+    public Libro getLibro() {
+        return libro;
+    }
+    public Persona getPersona() {
+        return persona;
+    }
 }
