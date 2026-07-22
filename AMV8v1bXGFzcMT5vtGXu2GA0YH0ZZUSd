@@ -1,0 +1,60 @@
+[33mcommit ea3f76dc2fd9a8e9b73219fc8f6bf525206292ff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: TLocatelli <thiagolocatelli12@gmail.com>
+Date:   Tue Jul 21 22:26:43 2026 -0300
+
+    Se refactorizo la funcion buscarPrestamo en Main.
+    -Se creo el metodo mostrarInformacion() en Prestamo.
+
+[33mcommit 0813431e2bcf80c76816c1aecbaeeb4a0fe7e994[m
+Author: TLocatelli <thiagolocatelli12@gmail.com>
+Date:   Sun Jul 19 23:58:08 2026 -0300
+
+    Se crearon e incluyeron las ultimas funciones para:
+    -Personas.
+    -Prestamos.
+
+[33mcommit e10c2eb53e5181e8cd1bfe78dc57a83f897d4810[m
+Author: TLocatelli <thiagolocatelli12@gmail.com>
+Date:   Sun Jul 19 21:17:49 2026 -0300
+
+    Se refactorizo el menu por completo, para tener mas legibilidad y limpieza.
+
+[33mcommit 1252d65198cbd8c80cd676bc05dba84ff57c8a39[m
+Author: TLocatelli <thiagolocatelli12@gmail.com>
+Date:   Sun Jul 19 03:44:34 2026 -0300
+
+    Se implementaros 4 funcionalidades, 2 en Biblioteca y 2 en Prestamo
+    -Prestamo --> 2 Getters para obtener el libro y persona del prestamo.
+    -Biblioteca --> 2 Metodos para buscar prestamos y devolver el libro del prestamo.
+
+[33mcommit d7713e2408dd035acd1d57634acdc44824277f12[m
+Author: TLocatelli <thiagolocatelli12@gmail.com>
+Date:   Sat Jul 18 04:07:51 2026 -0300
+
+    Se creo la clase Prestamo.
+    -En Libro se refactorizo el metodo mostrarInformacion.
+    -En Biblioteca se creo el metodo prestarLibro para poder añadir a la lista de prestamos tanto a personas como libros.
+
+[33mcommit e227589a40e4358054cefdb5732ba06eee995f20[m
+Author: TLocatelli <thiagolocatelli12@gmail.com>
+Date:   Sat Jul 18 03:12:12 2026 -0300
+
+    Se realizo el mismo CRUD para usuarios, y se creo un metodo en Persona para mostrar la informacion de usuarios.
+
+[33mcommit 7ea5fe580dd8a4bdd1bd419ed402ea23bead8b33[m
+Author: TLocatelli <thiagolocatelli12@gmail.com>
+Date:   Sat Jul 18 02:45:27 2026 -0300
+
+    Se creo una nueva clase Persona con sus atributos, metodos y getters por el momento
+
+[33mcommit 6c9f30c31ed37133d39ee929910fd7d630ade83d[m
+Author: TLocatelli <thiagolocatelli12@gmail.com>
+Date:   Sat Jul 18 02:29:25 2026 -0300
+
+    Agrege nuevos metodos en la clase Libro(estaPrestado, prestar, devolver), y el atributo prestado
+
+[33mcommit ee357d2e3a7ba33dd1ad65bea3f06f879fd8b665[m
+Author: TLocatelli <thiagolocatelli12@gmail.com>
+Date:   Sat Jul 18 00:19:15 2026 -0300
+
+    Me olvide de subir los avances del proyecto. Esto es todo lo que hice
