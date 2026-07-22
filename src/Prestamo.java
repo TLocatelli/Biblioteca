@@ -7,6 +7,11 @@ public class Prestamo {
         this.libro = libro;
         this.persona = persona;
     }
+    //Metodos
+    public void mostrarInformacion() {
+        libro.mostrarInformacion();
+        persona.mostrarInformacion();
+    }
     //Getters
     public Libro getLibro() {
         return libro;

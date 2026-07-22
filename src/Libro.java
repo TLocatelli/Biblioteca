@@ -13,7 +13,6 @@ public class Libro{
     }
     //Metodos
     public void mostrarInformacion() {
-
         System.out.printf("Id: %d | Titulo: %s | Autor: %s%n", id, titulo, autor);
     }
     public boolean estaPrestado() {

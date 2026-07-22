@@ -181,8 +181,9 @@ public class Main {
         sc.nextLine();
         Prestamo prestamo = biblioteca.buscarPrestamo(idLibro,idPersona);
         if(prestamo != null) {
-            prestamo.getLibro().mostrarInformacion();
-            prestamo.getPersona().mostrarInformacion();
+            prestamo.mostrarInformacion();
+        }else {
+            System.out.println("No existe ese prestamo.\n");
         }
     }
     private static void devolverLibro(Scanner sc, Biblioteca biblioteca) {
